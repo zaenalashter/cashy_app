@@ -7,6 +7,6 @@ TextStyle mainHeader = TextStyle(
 );
 TextStyle subHeader = TextStyle(
   fontSize: 16,
-  color: Colors.grey,
+  color: Color.fromARGB(255, 0, 0, 0),
   fontFamily: 'Poppins',
 );

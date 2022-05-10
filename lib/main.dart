@@ -32,7 +32,8 @@ class MyApp extends StatelessWidget {
         ),
         body: SafeArea(
           child: Container(
-            margin: EdgeInsets.only(left: 35),
+            // color: Colors.indigo,
+            margin: EdgeInsets.only(left: 33, right: 23),
             padding: EdgeInsets.only(top: 40),
             child: Column(
               children: <Widget>[
@@ -42,8 +43,9 @@ class MyApp extends StatelessWidget {
                 ),
                 Text("Rich Together", style: mainHeader),
                 Text(
-                  "Bla Bla Bla Bla Bla",
+                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
                   style: subHeader,
+                  textAlign: TextAlign.center,
                 ),
               ],
             ),
