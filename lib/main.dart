@@ -34,21 +34,27 @@ class MyApp extends StatelessWidget {
           child: Container(
             // color: Colors.indigo,
             margin: EdgeInsets.only(left: 33, right: 23),
-            padding: EdgeInsets.only(top: 40),
-            child: Column(
-              children: <Widget>[
-                Image(
-                  image: AssetImage('assets/images/payments.png'),
-                  height: 300,
-                ),
-                Padding(
-                  padding: EdgeInsets.only(top: 20, bottom: 10),
-                  child: Text("Rich Together", style: mainHeader),
-                ),
-                Text(
-                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                  style: subHeader,
-                  textAlign: TextAlign.center,
+            padding: EdgeInsets.only(top: 0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Image(
+                      image: AssetImage('assets/images/payments.png'),
+                      height: 300,
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20, bottom: 10),
+                      child: Text("Rich Together", style: mainHeader),
+                    ),
+                    Text(
+                      "Lorem Ipsum is simply dummy \n text of the printing and typesetting industry.",
+                      style: subHeader,
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
                 ),
               ],
             ),
