@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'font_style.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -38,8 +40,11 @@ class MyApp extends StatelessWidget {
                   image: AssetImage('assets/images/payments.png'),
                   height: 300,
                 ),
-                Text("Rich Together"),
-                Text("Bla Bla Bla Bla Bla"),
+                Text("Rich Together", style: mainHeader),
+                Text(
+                  "Bla Bla Bla Bla Bla",
+                  style: subHeader,
+                ),
               ],
             ),
           ),
