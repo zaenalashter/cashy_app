@@ -29,10 +29,19 @@ class MyApp extends StatelessWidget {
           ],
         ),
         body: SafeArea(
-            child: Image(
-          image: AssetImage('assets/images/payments.png'),
-          height: 300,
-        )),
+          child: Container(
+            child: Column(
+              children: <Widget>[
+                Image(
+                  image: AssetImage('assets/images/payments.png'),
+                  height: 300,
+                ),
+                Text("Rich Together"),
+                Text("Bla Bla Bla Bla Bla"),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }
